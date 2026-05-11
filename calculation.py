@@ -19,6 +19,6 @@ class calculatorareas:
             return result
     
     def calculate_osr(self, bonus = False):
-        return self.calculate_far(bonus) * (self.osr/100)
+        return self.area * (self.osr/100)
 
     
