@@ -10,7 +10,7 @@ def display_comparison(bonus = False):
         chart_display.append({
             "name" : data['name'],
             "far" : cal.calculate_far(bonus),
-            "osr" : cal.calculate_osr(bonus)
+            "osr" : cal.calculate_osr()
         })
     
     df_compare = pd.DataFrame(chart_display)
@@ -62,8 +62,11 @@ def comparison():
                 formatter = '{:,.2f}'), 
                 use_container_width = True
                 )
-
-            display_comparison(bonus)
+            
+            if calculatorareas(info).area <= 0:
+                st.warning("Area must be greater than zero to perform calculations.")
+            else:
+                display_comparison(bonus)
 
         with col2:
             if st.button("Clear compare list"):

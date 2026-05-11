@@ -10,13 +10,11 @@ class calculatorareas:
         self.osr = regulation['osr']
 
     def calculate_far(self, bonus = False):
-        if self.area <= 0:
-            return 0
         result = self.area * self.far
         new_far = self.far + (self.far*(20/100))
+
         if bonus == True:
             return self.area * new_far
-        
         else:
             return result
     
