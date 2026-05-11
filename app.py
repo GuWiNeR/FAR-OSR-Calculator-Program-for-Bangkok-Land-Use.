@@ -87,7 +87,7 @@ if selected == "Home":
     with col2:
         color_name = list(far_osr_type.keys())
         color_zoning = len(color_name)
-        color_list = ["#c2c500", "#ff9100", "#5C432F", "#ff0000", "#ff00dd", "#8c00ff", "#999999", "#008006", "#009fb4"]
+        color_list = ["#c2c500", "#ff9100", "#5C432F", "#ff0000", "#ff00dd", "#8c00ff", "#999999", "#008006", "#009fb4", "#c0897b"]
         st.metric(label = "Color zoning", value = color_zoning)
         with st.expander("Color zoning information"):
             for color in color_name:

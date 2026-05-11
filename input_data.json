@@ -2,22 +2,22 @@
   {
     "name": "AA",
     "district": "บางกะปิ",
-    "areas": 2500.0,
+    "areas": 5000.0,
     "zoning": "สีแดง",
     "sub_zoning": "พ1"
   },
   {
     "name": "BB",
-    "district": "บางนา",
-    "areas": 2500.0,
-    "zoning": "สีส้ม",
-    "sub_zoning": "ย6"
+    "district": "สัมพันธวงศ์",
+    "areas": 5000.0,
+    "zoning": "สีน้ำตาลอ่อน",
+    "sub_zoning": "ศ1"
   },
   {
     "name": "CC",
-    "district": "หนองจอก",
-    "areas": 2500.0,
-    "zoning": "สีขาวมีกรอบและเส้นทแยงสีเขียว",
-    "sub_zoning": "ก1"
+    "district": "ลาดกระบัง",
+    "areas": 5000.0,
+    "zoning": "สีแดง",
+    "sub_zoning": "พ5"
   }
 ]

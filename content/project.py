@@ -55,7 +55,7 @@ def editproject(selected):
 
         indx_list = list(district_zoning_rules)
 
-        d_index = indx_list.index(sel_data['district']) if sel_data in indx_list else 0 
+        d_index = indx_list.index(sel_data['district']) if sel_data['district'] in indx_list else 0
         districts = st.selectbox("District", options = info_disricts , index = d_index)
 
         areas = st.number_input("Site area (sq.m)", step = 10.00, min_value = 0.00 , value = float(sel_data['areas']))
@@ -63,7 +63,7 @@ def editproject(selected):
     with col2:
         #regulation type districts management 
         zoning_list = list(regulation_type_districts.keys())
-        sel_zoning = sel_data.get('zoning')
+        sel_zoning = list(districts)
 
         #change zone 
         zone_idx = zoning_list.index(sel_zoning) if sel_zoning in zoning_list else 0
