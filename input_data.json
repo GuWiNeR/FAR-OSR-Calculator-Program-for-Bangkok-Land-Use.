@@ -1,0 +1,23 @@
+[
+  {
+    "name": "AA",
+    "district": "บางกะปิ",
+    "areas": 2500.0,
+    "zoning": "สีแดง",
+    "sub_zoning": "พ1"
+  },
+  {
+    "name": "BB",
+    "district": "บางนา",
+    "areas": 2500.0,
+    "zoning": "สีส้ม",
+    "sub_zoning": "ย6"
+  },
+  {
+    "name": "CC",
+    "district": "หนองจอก",
+    "areas": 2500.0,
+    "zoning": "สีขาวมีกรอบและเส้นทแยงสีเขียว",
+    "sub_zoning": "ก1"
+  }
+]
