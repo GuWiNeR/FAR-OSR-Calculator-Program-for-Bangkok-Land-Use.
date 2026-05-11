@@ -186,8 +186,12 @@ def calculate_data():
 
             data_dict = sel_name_data[0]
             cal_data = calculatorareas(data_dict)
-            cal_far = cal_data.calculate_far(bonus)
-            cal_osr = cal_data.calculate_osr()
+            if cal_data.area <= 0:
+                st.warning("Area must be greater than zero to perform calculations.")
+                return
+            else:
+                cal_far = cal_data.calculate_far(bonus)
+                cal_osr = cal_data.calculate_osr()
 
         
         #-----------------show result------------------------
