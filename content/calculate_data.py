@@ -189,9 +189,10 @@ def calculate_data():
             if cal_data.area <= 0:
                 st.warning("Area must be greater than zero to perform calculations.")
                 return
-            else:
-                cal_far = cal_data.calculate_far(bonus)
-                cal_osr = cal_data.calculate_osr()
+
+            
+            cal_far = cal_data.calculate_far(bonus)
+            cal_osr = cal_data.calculate_osr()
 
         
         #-----------------show result------------------------

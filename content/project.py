@@ -24,6 +24,12 @@ def addproject():
         if any(p['name'] == project_name for p in data):
             st.error("Name have already taken!")
 
+        elif project_name.strip() == "":
+            st.error("Name cannot be empty!")
+        
+        elif areas <= 0:
+            st.error("Area must be greater than zero!")
+            
         else:
             project_create = {
                 "name" : project_name,
@@ -63,7 +69,7 @@ def editproject(selected):
     with col2:
         #regulation type districts management 
         zoning_list = list(regulation_type_districts.keys())
-        sel_zoning = list(districts)
+        sel_zoning = sel_data.get('zoning')
 
         #change zone 
         zone_idx = zoning_list.index(sel_zoning) if sel_zoning in zoning_list else 0
