@@ -1,5 +1,5 @@
 # FAR/OSR-Calculator-Program-for-Bangkok-Land-Use.
-This program is designed to calculate the Floor Area Ratio (FAR) and Open Space Ratio (OSR) for land use projects in Bangkok. It allows users to input project details, calculate FAR and OSR based on zoning regulations, and compare different projects.
+This program is designed to calculate the Floor Area Ratio (FAR) and Open Space Ratio (OSR) for land use projects in Bangkok. It allows users to input project details, calculate FAR and OSR based on zoning regulations, and compare different projects. using streamlit as a tool for user interface data calculation
 
 
 ---
@@ -19,7 +19,8 @@ This program is designed to calculate the Floor Area Ratio (FAR) and Open Space 
 
 - Python 3.12
 - Streamlit
-- pandas / matplotlib
+- pandas
+- matplotlib
 - fpdf2 (Thai font support via THSarabun)
 
 ---
